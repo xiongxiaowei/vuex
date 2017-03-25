@@ -20,9 +20,11 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
 
 ![](http://7xoxzw.com1.z0.glb.clouddn.com/16-7-31/92645066.jpg)
 
-> dispach触发一个事件之后->actions(commit)->mutations(state)
-  disapch 触发一个事件之后 
+
+ 
+### disapch 触发一个事件之后 
 1. 首先跑到actions上面去了
 2. actions通过commit一个行为到mutations
 3. mutations才能改变state
 #### actions 必须commit之后才能mutations改变
+[]()

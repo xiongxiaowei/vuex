@@ -5,14 +5,22 @@
     <input type="button" name="" value="点击减少" @click="decrement">
     <input type="button" name="" value="只有偶数才能点击+" @click="clickOdd">
     <input type="button" name="" value="异步增加" @click="clickAsync">
-    <div class="">
-      现在的数字是:{{count}},他是{{odd}}
-    </div>
+
+      <p>现在的数字是:{{count}},他是{{odd}}</p>
+    <router-link to="/home">home</router-link>
+    <router-link to="/tv">tv</router-link>
+    <router-link to='/news'>news</router-link>
+      <div class="">
+        <router-view></router-view>
+      </div>
+
+
   </div>
 
 </template>
 
 <script>
+import data from './data'
 import {mapGetters,mapActions} from 'vuex'
 export default {
   computed:mapGetters([
